@@ -43,11 +43,11 @@ void loop() {
       // Ausgabe zur Kontrolle
       Serial.print("Messung: ");
       Serial.print("ax=");
-      Serial.print(x-0.03, 2);
+      Serial.print(x, 2);
       Serial.print("g, ay=");
       Serial.print(y, 2);
       Serial.print("g, az=");
-      Serial.print(z-1, 2);
+      Serial.print(z, 2);
       Serial.println("g");
 
 
