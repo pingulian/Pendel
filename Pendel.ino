@@ -5,7 +5,7 @@ String dataStringx = "x (in g): ";
 String dataStringy = "y (in g): ";
 String dataStringz = "z (in g): ";
 unsigned long lastMeasurement = 0;
-const unsigned long interval = 500;         // Intervall in Millisekunden
+const unsigned long interval = 100;         // Intervall in Millisekunden
 float timer = 0;
 
 void setup() {
@@ -49,6 +49,11 @@ void loop() {
       Serial.print("g, az=");
       Serial.print(z, 2);
       Serial.println("g");
+
+      Serial.println(dataStringt);
+      Serial.println(dataStringx);
+      Serial.println(dataStringy);
+      Serial.println(dataStringz);
 
 
       
